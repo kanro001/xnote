@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>XNote</title>
+<link rel="stylesheet" href="bootstrap.min.css"/>
+<link rel="stylesheet" href="css/main.css"/>
+<!-- For supporting HTML5 tags -->
+<!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!-- For supporting media query -->
+<!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+<body>
+	<script src="jquery.min.js"></script>
+	<script src="bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+	<div id="xnote_wrap">
+		<header id="xnote_header">
+	
+			<hgroup>
+				<h1 id="xnote_site_logo"><a href="javascript:void(0);">Jingo</a></h1>
+				<h2 id="xnote_site_description">Share notes with others</h2>
+			</hgroup>
+		</header>
+		<script src="js/account.js"></script>
+		<div id="xnote_body_login">
+			<input type="email" name="email" class="xnote_login_input" id="xnote_login_input_email" pattern="[^ @]*@[^ @]*" placeholder="Email Address | Username" autofocus required>
+			<input type="password" name="password" class="xnote_login_input" id="xnote_login_input_password" placeholder="Password" required>
+			<input type="button" value="Log In" href="javascript:login_ajax();" id="xnote_login_submit" class="xnote_login_submit" onclick='login_ajax()'>
+			<p class="xnote_login_help"><a href="javascript:void(0)">Forgot password?</a></p>
+	
+		</div>
+		
+		<footer id="xnote_footer">
+			<a href="javascript:signupform();" class="xnote_login_submit" id="xnote_signup">Signup for Jingo</a>
+		</footer>
+	</div>
+
+</body>
+</html>
